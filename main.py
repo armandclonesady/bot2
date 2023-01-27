@@ -16,7 +16,5 @@ if __name__ == '__main__':
         message = await ctx.send("Working on it!!")
         await reloadAllModules(client)
         await message.edit("Reloaded all modules")
-    async def addToList(ctx: interactions.CommandContext):
-        pass
         
     client.start()
