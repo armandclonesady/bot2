@@ -1,5 +1,6 @@
 import os
 import asyncio
+import json
 
 def getAllModules():
     allModules = []
@@ -17,8 +18,13 @@ async def reloadAllModules(client):
         client.load(module)
         print(f"Reloaded {module}")
 
+
 def getAllServers(client):
     allServers = []
     for guild in client.guilds:
         allServers.append(guild)
     return allServers
+
+def accessJsonFile():
+    with open("../res", "r") as file:
+        return json.load(file)

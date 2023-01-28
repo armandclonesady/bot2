@@ -16,5 +16,5 @@ if __name__ == '__main__':
         message = await ctx.send("Working on it!!")
         await reloadAllModules(client)
         await message.edit("Reloaded all modules")
-        
+
     client.start()
